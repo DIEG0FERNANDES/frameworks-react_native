@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { ContainerPagedois, PagedoisTitle } from './styles';
+import { Container, Title } from './styles';
 
 // importação de inputs e botoes
 import CusButton from '../../components/Button/index';
@@ -11,15 +11,14 @@ export default function Page2() {
   const [horasMes, setHorasMes] = useState('');
   const [st, setSt] = useState('');
 
-  // const horasPorMes = horasTrabalhadas * 5;
-  // (horasTrabalhadas = 44), (valorSalarioMinimo = 1320);
+  // script do calculo
   function porHorasTrabalhados() {
     let st = Number(salaMes) / Number(horasMes);
     setSt(st.toFixed(2));
   }
   return (
-    <ContainerPagedois>
-      <PagedoisTitle>Salário por Horas Trabalhadas</PagedoisTitle>
+    <Container>
+      <Title>Salário por Horas Trabalhadas</Title>
       <CusInput
         title="Salario por Mês"
         value={salaMes}
@@ -31,7 +30,7 @@ export default function Page2() {
         onChangeText={setHorasMes}
       />
       <CusButton title="Calcular" onPress={() => porHorasTrabalhados()} />
-      <PagedoisTitle>O valor a ser ganho é de {st} por horas trabalhadas </PagedoisTitle>
-    </ContainerPagedois>
+      <Title>O valor a ser ganho é de {st} por horas trabalhadas </Title>
+    </Container>
   );
 }

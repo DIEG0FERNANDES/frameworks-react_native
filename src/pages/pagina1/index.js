@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 // importação de styles
-import { Page1Container, Page1Title } from './styles';
+import { Container, Title } from './styles';
 
 // importação components
 import CusButton from '../../components/Button/index';
@@ -19,8 +19,8 @@ export default function Page1() {
     }
 
     return (
-        <Page1Container>
-            <Page1Title>Salario por Dias Trabalhados</Page1Title>
+        <Container>
+            <Title>Salario por Dias Trabalhados</Title>
             <CusInput
                 title="Salario por Mês"
                 value={salaMes}
@@ -37,7 +37,7 @@ export default function Page1() {
                 onChangeText={setDiaTrab}
             />
             <CusButton title="Calcular" onPress={() => porDiasTrabalhados()} />
-            <Page1Title>O valor a ser ganho sera de {st}</Page1Title>
-        </Page1Container>
+            <Title>O valor a ser ganho sera de {st}</Title>
+        </Container>
     )
 }

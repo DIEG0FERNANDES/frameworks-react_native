@@ -7,4 +7,4 @@ export const InputText = styled.TextInput`
     align-items: center;
     text-align: center;
     margin: 15px;
-`
+`;

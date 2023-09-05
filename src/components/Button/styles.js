@@ -7,7 +7,7 @@ export const ButtonContainer = styled.TouchableOpacity`
   align-items: center;
   margin: 15px;
 `;
-export const ButtonTitle = styled.h1`
+export const ButtonTitle = styled.text`
   color: white;
   font-size: 20px;
 `;
