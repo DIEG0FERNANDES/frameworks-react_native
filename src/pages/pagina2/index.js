@@ -1,12 +1,10 @@
-import { View, Text } from 'react-native';
 import { useState } from 'react';
 
-//importação do sttyles da pagina
-import HomeStyles from '../styles/HomescreenStyle';
+import { ContainerPagedois, PagedoisTitle } from './styles';
 
 // importação de inputs e botoes
-import CusButton from '../components/Button/index';
-import CusInput from '../components/Input/index';
+import CusButton from '../../components/Button/index';
+import CusInput from '../../components/Input/index';
 
 export default function Page2() {
   const [salaMes, setSalaMes] = useState('');
@@ -20,8 +18,8 @@ export default function Page2() {
     setSt(st.toFixed(2));
   }
   return (
-    <View style={HomeStyles.container}>
-      <Text style={HomeStyles.title}>Salário por Horas Trabalhadas</Text>
+    <ContainerPagedois>
+      <PagedoisTitle>Salário por Horas Trabalhadas</PagedoisTitle>
       <CusInput
         title="Salario por Mês"
         value={salaMes}
@@ -33,7 +31,7 @@ export default function Page2() {
         onChangeText={setHorasMes}
       />
       <CusButton title="Calcular" onPress={() => porHorasTrabalhados()} />
-      <Text>O valor a ser ganho é de {st} por horas trabalhadas </Text>
-    </View>
+      <PagedoisTitle>O valor a ser ganho é de {st} por horas trabalhadas </PagedoisTitle>
+    </ContainerPagedois>
   );
 }

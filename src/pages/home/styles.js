@@ -7,6 +7,6 @@ padding-top: 16px;
 background-color: #fff;
 `
 
-export const HomeTitle = styled.Text`
+export const HomeTitle = styled.h1`
 font-size: 20px;
 `

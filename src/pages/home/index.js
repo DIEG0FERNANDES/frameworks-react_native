@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 import { HomeContainer, HomeTitle } from './styles';
 
 //importação dos components
-import CusButton from '../components/Button/index'
+import CusButton from '../../components/Button/index';
 
 export default function HomeScreen({ navigation }) {
     return (
