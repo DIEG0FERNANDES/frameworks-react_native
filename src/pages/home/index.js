@@ -8,8 +8,8 @@ export default function HomeScreen({ navigation }) {
     return (
         <Container>
             <Title>Calculadora de Salario</Title>
-            <CusButton title="Dias Trabalhados" onPress={() => navigation.navigate('Teste1')} />
-            <CusButton title="Por Horas Trabalhadas" onPress={() => navigation.navigate('Teste2')} />
+            <CusButton title="Dias Trabalhados" onPress={() => navigation.navigate('Page1')} />
+            <CusButton title="Por Horas Trabalhadas" onPress={() => navigation.navigate('Page2')} />
         </Container>
     );
 }

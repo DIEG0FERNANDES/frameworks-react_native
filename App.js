@@ -20,7 +20,7 @@ export default function App() {
             headerTintColor: '#fff',
           }}
         />
-        <Stack.Screen name="Teste1" component={Page1}
+        <Stack.Screen name="Page1" component={Page1}
           options={{
             title: "Dias Trabalhados",
             headerStyle: {
@@ -29,7 +29,7 @@ export default function App() {
             headerTintColor: '#fff',
           }}
         />
-        <Stack.Screen name="Teste2" component={Page2}
+        <Stack.Screen name="TPage2" component={Page2}
           options={{
             title: "Horas Trabalhadas",
             headerStyle: {
