@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/native";
 
 export const Containerp2 = styled.View`
 flex: 1px;
