@@ -1,9 +1,10 @@
-import { View, TextInput } from 'react-native';
+import { View } from 'react-native';
+import { InputText } from './styles';
 
 export default function CusInput(props) {
     return (
         <View>
-            <TextInput
+            <InputText
                 placeholder={props.title}
                 value={props.value}
                 onChangeText={props.onChangeText}

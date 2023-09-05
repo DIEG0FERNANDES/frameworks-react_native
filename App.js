@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import HomeScreen from "./src/pages/HomeScreen";
+import HomeScreen from "./src/pages/HomeScreen/index";
 import Page1 from './src/pages/Page1';
 import Page2 from './src/pages/Page2';
 
@@ -10,9 +10,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
+        <Stack.Screen name="Home" component={HomeScreen}
           options={{
             title: 'Página Inicial',
             headerStyle: {
@@ -22,7 +20,7 @@ export default function App() {
           }}
         />
         <Stack.Screen name="Teste1" component={Page1}
-         options={{ 
+          options={{
             title: "Dias Trabalhados",
             headerStyle: {
               backgroundColor: 'blue',
@@ -31,7 +29,7 @@ export default function App() {
           }}
         />
         <Stack.Screen name="Teste2" component={Page2}
-         options={{ 
+          options={{
             title: "Horas Trabalhadas",
             headerStyle: {
               backgroundColor: 'blue',

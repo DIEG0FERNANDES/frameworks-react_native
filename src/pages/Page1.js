@@ -5,8 +5,8 @@ import { useState } from 'react';
 import HomeStyles from '../styles/HomescreenStyle';
 
 // importação de inputs e botoes
-import CusButton from '../components/CusButton';
-import CusInput from '../components/CusInput';
+import CusButton from '../components/Button/index';
+import CusInput from '../components/Input/index';
 
 export default function Page1() {
   const [salaMes, setSalaMes] = useState("");
