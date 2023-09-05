@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { Page1Container, Page1Title } from './styles';
 
 // importação components
-import CusButton from '../components/Button/index';
-import CusInput from '../components/Input/index';
+import CusButton from '../../components/Button/index';
+import CusInput from '../../components/Input/index';
 
 export default function Page1() {
     const [salaMes, setSalaMes] = useState("");
